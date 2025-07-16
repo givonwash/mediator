@@ -5,5 +5,6 @@
   plugins.nvim-tree = {
     enable = true;
     hijackNetrw = true;
+    updateFocusedFile.enable = true;
   };
 }
