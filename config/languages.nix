@@ -31,9 +31,6 @@
         incremental_selection.enable = true;
       };
     };
-    treesitter-context = {
-      enable = true;
-      settings.mode = "topline";
-    };
+    treesitter-context.enable = true;
   };
 }
