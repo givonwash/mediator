@@ -13,15 +13,22 @@
       basedpyright.enable = true;
       bashls.enable = true;
       dockerls.enable = true;
+      jsonls.enable = true;
       lua_ls.enable = true;
       nil_ls.enable = true;
       terraformls.enable = true;
+      yamlls.enable = true;
     };
   };
   plugins = {
     comment.enable = true;
     conform-nvim.enable = true;
     lspconfig.enable = true;
+    schemastore = {
+      enable = true;
+      json.enable = true;
+      yaml.enable = true;
+    };
     treesitter = {
       enable = true;
       grammarPackages = pkgs.vimPlugins.nvim-treesitter.passthru.allGrammars;
