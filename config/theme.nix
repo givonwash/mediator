@@ -10,7 +10,10 @@
   plugins = {
     bufferline = {
       enable = true;
-      settings.options.hover.enable = true;
+      settings.options = {
+        hover.enable = true;
+        separator_style = "slope";
+      };
     };
     helpview.enable = true;
     lualine.enable = true;
