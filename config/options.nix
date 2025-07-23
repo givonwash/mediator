@@ -9,7 +9,6 @@
     history = 500;
     ignorecase = true;
     incsearch = true;
-    lazyredraw = true;
     number = true;
     relativenumber = true;
     scrolloff = 2;
