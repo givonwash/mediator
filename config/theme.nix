@@ -1,4 +1,3 @@
-{ lib, ... }:
 {
   keymaps = [
     { mode = "n"; key = "gb"; action = "<CMD>BufferLineCycleNext<CR>"; }
