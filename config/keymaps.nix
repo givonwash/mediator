@@ -19,7 +19,6 @@
     { mode = "n"; key = "<S-M-w>"; action = "<CMD>vertical resize -1<CR>"; }
     { mode = "n"; key = "<M-b>"; action = "<CMD>resize +1<CR>"; }
     { mode = "n"; key = "<S-M-b>"; action = "<CMD>resize -1<CR>"; }
-    { mode = "n"; key = "g."; action = "<CMD>bdelete<CR>"; }
     { mode = "n"; key = "<C-n>"; action = "<CMD>cnext<CR>"; }
     { mode = "n"; key = "<C-p>"; action = "<CMD>cprev<CR>"; }
     { mode = "n"; key = "<M-n>"; action = "<CMD>lnext<CR>"; }

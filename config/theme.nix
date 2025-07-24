@@ -1,7 +1,10 @@
+{ lib, ... }:
 {
   keymaps = [
     { mode = "n"; key = "gb"; action = "<CMD>BufferLineCycleNext<CR>"; }
     { mode = "n"; key = "gB"; action = "<CMD>BufferLineCyclePrev<CR>"; }
+    { mode = "n"; key = "g."; action = lib.nixvim.mkRaw "function() Snacks.bufdelete() end"; }
+    { mode = "n"; key = "g>"; action = lib.nixvim.mkRaw "function() Snacks.bufdelete.other() end"; }
     { mode = "n"; key = "<LEADER>td"; action = "<CMD>Trouble diagnostics<CR>"; }
     { mode = "n"; key = "<LEADER>tl"; action = "<CMD>Trouble loclist<CR>"; }
     { mode = "n"; key = "<LEADER>tq"; action = "<CMD>Trouble quickfix<CR>"; }
