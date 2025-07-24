@@ -20,6 +20,7 @@
     snacks = {
       enable = true;
       settings = {
+        animate.easing = "outExpo";
         bigfile.enabled = true;
         dashboard = {
           enabled = true;
