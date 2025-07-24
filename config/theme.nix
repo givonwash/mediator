@@ -12,9 +12,19 @@
   plugins = {
     bufferline = {
       enable = true;
-      settings.options = {
-        hover.enable = true;
-        separator_style = "slope";
+      settings = {
+        options = {
+          hover.enable = true;
+          separator_style = "slope";
+          offsets = [
+            {
+              filetype = "NvimTree";
+              text = "File Explorer";
+              highlight = "Directory";
+              separator = true;
+            }
+          ];
+        };
       };
     };
     helpview.enable = true;
