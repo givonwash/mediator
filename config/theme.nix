@@ -45,7 +45,6 @@
         };
         indent.enabled = true;
         input.enabled = true;
-        scroll.enabled = true;
         statuscolumn.enabled = true;
         quickfile.enabled = true;
       };
