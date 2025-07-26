@@ -22,7 +22,13 @@
   };
   plugins = {
     comment.enable = true;
-    conform-nvim.enable = true;
+    conform-nvim = {
+      enable = true;
+      settings.format_on_save = {
+        lsp_format = "fallback";
+        timeout_ms = 100;
+      };
+    };
     lspconfig.enable = true;
     schemastore = {
       enable = true;
