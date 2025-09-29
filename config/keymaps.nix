@@ -28,7 +28,7 @@
     { mode = "n"; key = "?"; action = "?\\v"; options = { silent = false; desc = "TODO"; }; }
     { mode = "n"; key = "/"; action = "/\\v"; options = { silent = false; desc = "TODO"; }; }
     { mode = "n"; key = "<LEADER><LEADER>"; action = ":%s:\\v::g<LEFT><LEFT><LEFT>"; options = { silent = false; desc = "TODO"; }; }
-    { mode = "n"; key = "<LEADER>:"; action = ":s:\\v::g <LEFT><LEFT><LEFT>"; options = { silent = false; desc = "TODO"; }; }
+    { mode = "n"; key = "<LEADER>;"; action = ":s:\\v::g<LEFT><LEFT><LEFT>"; options = { silent = false; desc = "TODO"; }; }
     { mode = "n"; key = "<LEADER>'"; action = ":.,$s:\\v::g<LEFT><LEFT><LEFT>"; options = { silent = false; desc = "TODO"; }; }
     { mode = "n"; key = "<LEADER>k"; action = ":%s:\\v<<C-r><C-w>>::g<LEFT><LEFT>"; options = { silent = false; desc = "TODO"; }; }
     { mode = "n"; key = "<LEADER>g"; action = ":%g:\\v"; options = { silent = false; desc = "TODO"; }; }
