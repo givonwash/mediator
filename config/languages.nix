@@ -24,10 +24,19 @@
     comment.enable = true;
     conform-nvim = {
       enable = true;
-      settings.format_on_save = {
-        lsp_format = "fallback";
-        timeout_ms = 100;
-      };
+      luaConfig.content = ''
+        do
+          local setup_conform = function()
+            opts = require('neoconf').get('conform', {})
+            require('conform').setup(opts)
+          end
+
+          vim.api.nvim_create_autocmd({'BufWritePre'}, {
+            once = true,
+            callback = setup_conform
+          })
+        end
+      '';
     };
     lspconfig.enable = true;
     schemastore = {

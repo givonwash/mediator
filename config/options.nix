@@ -5,7 +5,6 @@
     conceallevel = 2;
     cursorline = true;
     expandtab = true;
-    exrc = true;
     hidden = true;
     history = 500;
     ignorecase = true;

@@ -13,6 +13,7 @@
         end
       '';
     };
+    neoconf.enable = true;
     nvim-autopairs.enable = true;
     nvim-surround.enable = true;
     which-key.enable = true;
