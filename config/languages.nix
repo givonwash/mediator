@@ -32,7 +32,7 @@
             require('conform').setup(opts)
           end
 
-          vim.api.nvim_create_autocmd({'BufWritePre'}, {
+          vim.api.nvim_create_autocmd({'VimEnter'}, {
             once = true,
             callback = setup_conform
           })
