@@ -17,6 +17,7 @@
       lua_ls.enable = true;
       nil_ls.enable = true;
       terraformls.enable = true;
+      tsgo.enable = true;
       yamlls.enable = true;
     };
   };
