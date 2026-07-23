@@ -5,8 +5,10 @@
   plugins = {
     nvim-tree = {
       enable = true;
-      hijackNetrw = true;
-      updateFocusedFile.enable = true;
+      settings = {
+        hijack_netrw = true;
+        update_focused_file.enable = true;
+      };
     };
     project-nvim = {
       enable = true;
