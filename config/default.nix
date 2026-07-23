@@ -1,5 +1,6 @@
 {
   imports = [
+    ./ai.nix
     ./completion.nix
     ./edit.nix
     ./filesystem.nix
