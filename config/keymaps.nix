@@ -15,10 +15,12 @@
     { mode = "n"; key = "<S-M-l>"; action = "<CMD>wincmd L<CR>"; }
     { mode = "n"; key = "<LEADER>o"; action = "<CMD>only<CR>"; }
     { mode = "n"; key = "<LEADER>c"; action = "<CMD>close<CR>"; }
-    { mode = "n"; key = "<M-w>"; action = "<CMD>vertical resize +1<CR>"; }
-    { mode = "n"; key = "<S-M-w>"; action = "<CMD>vertical resize -1<CR>"; }
-    { mode = "n"; key = "<M-b>"; action = "<CMD>resize +1<CR>"; }
-    { mode = "n"; key = "<S-M-b>"; action = "<CMD>resize -1<CR>"; }
+    { mode = "n"; key = "<C-M-h>"; action = "<CMD>lua require('smart-splits').resize_left()<CR>"; }
+    { mode = "n"; key = "<C-M-j>"; action = "<CMD>lua require('smart-splits').resize_down()<CR>"; }
+    { mode = "n"; key = "<C-M-k>"; action = "<CMD>lua require('smart-splits').resize_up()<CR>"; }
+    { mode = "n"; key = "<C-M-l>"; action = "<CMD>lua require('smart-splits').resize_right()<CR>"; }
+    { mode = "n"; key = "<LEADER>w"; action = "<CMD>ResizeMode<CR>"; }
+    { mode = "n"; key = "<LEADER>="; action = "<CMD>wincmd =<CR>"; }
     { mode = "n"; key = "<C-n>"; action = "<CMD>cnext<CR>"; }
     { mode = "n"; key = "<C-p>"; action = "<CMD>cprev<CR>"; }
     { mode = "n"; key = "<M-n>"; action = "<CMD>lnext<CR>"; }
@@ -52,5 +54,9 @@
     { mode = "t"; key = "<S-M-j>"; action = "<C-\\><C-N><CMD>wincmd J<CR>"; }
     { mode = "t"; key = "<S-M-k>"; action = "<C-\\><C-N><CMD>wincmd K<CR>"; }
     { mode = "t"; key = "<S-M-l>"; action = "<C-\\><C-N><CMD>wincmd L<CR>"; }
+    { mode = "t"; key = "<C-M-h>"; action = "<CMD>lua require('smart-splits').resize_left()<CR>"; }
+    { mode = "t"; key = "<C-M-j>"; action = "<CMD>lua require('smart-splits').resize_down()<CR>"; }
+    { mode = "t"; key = "<C-M-k>"; action = "<CMD>lua require('smart-splits').resize_up()<CR>"; }
+    { mode = "t"; key = "<C-M-l>"; action = "<CMD>lua require('smart-splits').resize_right()<CR>"; }
   ];
 }

@@ -9,5 +9,6 @@
     ./options.nix
     ./search.nix
     ./theme.nix
+    ./windows.nix
   ];
 }
