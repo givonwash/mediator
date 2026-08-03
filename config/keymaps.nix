@@ -19,7 +19,12 @@
     { mode = "n"; key = "<C-M-j>"; action = "<CMD>lua require('smart-splits').resize_down()<CR>"; }
     { mode = "n"; key = "<C-M-k>"; action = "<CMD>lua require('smart-splits').resize_up()<CR>"; }
     { mode = "n"; key = "<C-M-l>"; action = "<CMD>lua require('smart-splits').resize_right()<CR>"; }
-    { mode = "n"; key = "<LEADER>w"; action = "<CMD>ResizeMode<CR>"; }
+    { mode = "n"; key = "<LEADER>Wh"; action = "<CMD>lua require('smart-splits').resize_left()<CR>"; options = { desc = "left"; }; }
+    { mode = "n"; key = "<LEADER>Wj"; action = "<CMD>lua require('smart-splits').resize_down()<CR>"; options = { desc = "down"; }; }
+    { mode = "n"; key = "<LEADER>Wk"; action = "<CMD>lua require('smart-splits').resize_up()<CR>"; options = { desc = "up"; }; }
+    { mode = "n"; key = "<LEADER>Wl"; action = "<CMD>lua require('smart-splits').resize_right()<CR>"; options = { desc = "right"; }; }
+    { mode = "n"; key = "<LEADER>W="; action = "<CMD>wincmd =<CR>"; options = { desc = "equalize"; }; }
+    { mode = "n"; key = "<LEADER>w"; action = "<CMD>lua require('which-key').show({ keys = '<LEADER>W', loop = true })<CR>"; options = { desc = "resize window mode"; }; }
     { mode = "n"; key = "<LEADER>="; action = "<CMD>wincmd =<CR>"; }
     { mode = "n"; key = "<C-n>"; action = "<CMD>cnext<CR>"; }
     { mode = "n"; key = "<C-p>"; action = "<CMD>cprev<CR>"; }
