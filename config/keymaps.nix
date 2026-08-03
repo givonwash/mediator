@@ -45,12 +45,12 @@
     # === TERMINAL mode ===
     { mode = "t"; key = "jj"; action = "<C-\\><C-N>"; }
     { mode = "t"; key = "<M-h>"; action = "<C-\\><C-N><CMD>wincmd h<CR>"; }
-    { mode = "t"; key = "<M-j>"; action = "<C-\\><C-N>CMD>wincmd j<CR>"; }
-    { mode = "t"; key = "<M-k>"; action = "<C-\\><C-N>CMD>wincmd k<CR>"; }
-    { mode = "t"; key = "<M-l>"; action = "<C-\\><C-N>CMD>wincmd l<CR>"; }
-    { mode = "t"; key = "<S-M-h>"; action = "<C-\\><C-N>CMD>wincmd H<CR>"; }
-    { mode = "t"; key = "<S-M-j>"; action = "<C-\\><C-N>CMD>wincmd J<CR>"; }
-    { mode = "t"; key = "<S-M-k>"; action = "<C-\\><C-N>CMD>wincmd K<CR>"; }
-    { mode = "t"; key = "<S-M-l>"; action = "<C-\\><C-N>CMD>wincmd L<CR>"; }
+    { mode = "t"; key = "<M-j>"; action = "<C-\\><C-N><CMD>wincmd j<CR>"; }
+    { mode = "t"; key = "<M-k>"; action = "<C-\\><C-N><CMD>wincmd k<CR>"; }
+    { mode = "t"; key = "<M-l>"; action = "<C-\\><C-N><CMD>wincmd l<CR>"; }
+    { mode = "t"; key = "<S-M-h>"; action = "<C-\\><C-N><CMD>wincmd H<CR>"; }
+    { mode = "t"; key = "<S-M-j>"; action = "<C-\\><C-N><CMD>wincmd J<CR>"; }
+    { mode = "t"; key = "<S-M-k>"; action = "<C-\\><C-N><CMD>wincmd K<CR>"; }
+    { mode = "t"; key = "<S-M-l>"; action = "<C-\\><C-N><CMD>wincmd L<CR>"; }
   ];
 }
