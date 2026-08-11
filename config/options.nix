@@ -26,4 +26,12 @@
     winborder = "rounded";
     wrap = false;
   };
+
+  autoCmd = [
+    {
+      event = "FileType";
+      pattern = "markdown";
+      command = "setlocal linebreak wrap";
+    }
+  ];
 }
