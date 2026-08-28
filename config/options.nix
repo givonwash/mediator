@@ -4,7 +4,7 @@
     colorcolumn = [ "+1" ];
     conceallevel = 2;
     cursorline = true;
-    expandtab = true;
+    expandtab = false;
     hidden = true;
     history = 500;
     ignorecase = true;
@@ -19,6 +19,7 @@
     smartindent = true;
     smarttab = true;
     softtabstop = 2;
+    tabstop = 2;
     splitbelow = true;
     splitright = true;
     timeoutlen = 300;
