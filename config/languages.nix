@@ -10,7 +10,10 @@
       { key = "gd"; lspBufAction = "definition"; }
     ];
     servers = {
-      basedpyright.enable = true;
+      basedpyright = {
+        enable = true;
+        config.root_markers = [ "pyrightconfig.json" ];
+      };
       bashls.enable = true;
       dockerls.enable = true;
       jsonls.enable = true;
