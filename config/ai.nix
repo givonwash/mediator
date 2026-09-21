@@ -1,19 +1,20 @@
 { pkgs, lib, ... }:
-let
-  acp = pkgs.nodePackages."@zed-industries/claude-code-acp";
-in
 {
   plugins.avante = {
     enable = true;
     settings = {
-      provider = "claude-code-nix";
-      acp_providers."claude-code-nix" = {
-        command = lib.getExe' acp "claude-agent-acp";
-        args = [ ];
+      provider = "codex-nix";
+      acp_providers."codex-nix" = {
+        command = lib.getExe pkgs.codex-acp;
+        # codex-acp 0.9.2's built-in default model is long gone from OpenAI's
+        # catalog for ChatGPT-subscription accounts; pin one this account has.
+        args = [
+          "-c"
+          "model=\"gpt-5.6-sol\""
+        ];
         env = {
-          NODE_NO_WARNINGS = "1";
-          ACP_PATH_TO_CLAUDE_CODE_EXECUTABLE = "claude";
-          ACP_PERMISSION_MODE = "bypassPermissions";
+          HOME = lib.nixvim.mkRaw "os.getenv('HOME')";
+          OPENAI_API_KEY = lib.nixvim.mkRaw "os.getenv('OPENAI_API_KEY')";
         };
       };
     };
